@@ -1,5 +1,3 @@
--- Create a script that populates all of the database tables with sample data
-
 -- students
 USE bottega_sql_schema;
 

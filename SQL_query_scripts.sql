@@ -3,8 +3,10 @@ USE bottega_sql_schema;
 
 SELECT p.professors_first_name, p.professors_last_name, AVG(g.grades_puntuation) AS "Average Grade"
 FROM grades g
-JOIN courses c ON g.grades_courses_id = c.courses_id
-JOIN professors p ON c.courses_professors_id = p.profesors_id
+JOIN courses c 
+ON g.grades_courses_id = c.courses_id
+JOIN professors p 
+ON c.courses_professors_id = p.profesors_id
 GROUP BY p.professors_first_name, p.professors_last_name;
 
 
